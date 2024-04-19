@@ -1,0 +1,44 @@
+* {border: 1px Solid red}
+
+body {
+  height: 130vh;
+  display: grid;
+  grid-template-columns: repeat(5,20%);
+}
+
+#sidebar {
+  grid-column: 1/2;
+}
+
+#container {
+  grid-column: span 4;
+  display: grid;
+  grid-template-rows: repeat(10,10%);
+}
+
+#header-container {
+  grid-row: span 2;
+}
+
+#content-container {
+  grid-row: span 8;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#projects {
+  grid-column: span 3;
+}
+
+#right-sidebar {
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+}
+
+#announcements {
+  grid-row: span 6;
+}
+
+#trending {
+  grid-row: span 4;
+}
