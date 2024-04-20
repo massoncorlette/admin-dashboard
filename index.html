@@ -8,15 +8,52 @@
 </head>
 <body>
   <div id="sidebar">
-    <p id="header">My page</p>
-    <div id="selections"></div>
-    <div id="subselections"></div>
+    <div class="selection">
+      <img src="icons/view-sequential.svg" class="iconsize" id="dashicon">
+      <p style="font-size: 24px;">Dash Board</p>
+    </div> 
+    <div id="selections">
+      <div class="selection">
+        <img src="icons/home-circle.svg" class="iconsize">
+        <p>Home</p>
+      </div>
+      <div class="selection">
+        <img src="icons/home-city.svg" class="iconsize">
+        <p>Community</p>
+      </div>
+      <div class="selection">
+        <img src="icons/message-reply.svg" class="iconsize">
+        <p>Messages</p>
+      </div>
+      <div class="selection">
+        <img src="icons/animation-play.svg" class="iconsize" id="animation-icon">
+        <p>Creations</p>
+      </div>
+      <div class="selection">
+        <img src="icons/diamond.svg" class="iconsize">
+        <p>Premium</p>
+      </div>
+      <div class="selection">
+        <img src="icons/shield-alert.svg" class="iconsize">
+        <p>Support</p>
+      </div>
+      <div class="selection">
+        <img src="icons/cog.svg" class="iconsize">
+        <p>Settings</p>
+      </div>
+  
+    </div>
   </div>
   <div id="container">
     <div id="header-container">
       <div id="search-container">
-        <img src="icons/magnify.svg" id="magnify">
+        <img src="icons/magnify.svg" id="magnify" class="iconsize">
         <input type="search" id="query" placeholder="Search..." required>
+        <div id="profile-container">
+          <img src="icons/account.svg" id="account" class="iconsize">
+          <img src="icons/profilepic.jpg" id="profilepic">
+          <p id="profilename">Masson Allen</p>
+        </div>
       </div>
     </div>
     <div id="content-container">
