@@ -7,7 +7,7 @@
 }
 
 body {
-  height: 120vh;
+  height: 140vh;
   margin: 0%;
   display: grid;
   grid-template-columns: repeat(16,1fr);
@@ -30,6 +30,7 @@ body {
   grid-template-rows: repeat(10,1fr);
   background-color: var(--secondary-color);
   box-shadow: 0 12px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 12px 12px rgba(0, 0, 0, 0.3);
 }
 
 #search {
@@ -72,6 +73,13 @@ body {
   background-color: var(--third-color);
   grid-column: 1/21;
   grid-row: 5;
+}
+
+#sidebardivider {
+  height: 2px;
+  background-color: var(--secondary-color);
+  grid-row: 4;
+  margin-top: 1px;
 }
 
 #actions-container {
@@ -134,7 +142,7 @@ body {
   background-color: white;
 }
 
-.project {
+.project, #right-sidebar {
   background-color: rgb(255, 255, 255);
   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
 }
@@ -162,15 +170,17 @@ body {
 }
 
 #dashicon {
-  margin-top: 10px;
+  height: 50px;
+  margin-top: 15px;
 }
 
 #dashboard {
   font-weight: bolder;
+  margin-top: 30px;
 }
 
 #selections {
-  grid-row: 3/12;
+  grid-row: 5/14;
   grid-template-rows: repeat(10, 1fr);
   margin-left: 5px;
 }
