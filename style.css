@@ -1,13 +1,13 @@
 * {border: 0px Solid red}
 
 :root {
-  --primary-color: #f1f5f9;
+  --primary-color: #d9e1eb;
   --secondary-color: #94a3b8;
-  --third-color: #475569;
+  --third-color: #28313d;
 }
 
 body {
-  height: 140vh;
+  height: 120vh;
   margin: 0%;
   display: grid;
   grid-template-columns: repeat(16,1fr);
@@ -81,7 +81,6 @@ body {
   grid-row: 8/10;
 }
 
-
 .space-icons, .space-icons-right{
   display: flex;
   transition: transform 0.3s ease;
@@ -106,7 +105,6 @@ body {
   grid-column: 16/20;
   grid-row: 9;
   justify-content: space-between;
-  
 }
 
 #content-container {
@@ -138,6 +136,7 @@ body {
 
 .project {
   background-color: rgb(255, 255, 255);
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
 #sidebar {
@@ -182,6 +181,10 @@ body {
   gap: 10px;
   font-style:normal;
   font-weight: bold;
+}
+
+.selectiontxt {
+  color: var(--secondary-color);
 }
 
 .selection:hover {
