@@ -7,7 +7,7 @@
 }
 
 body {
-  height: 140vh;
+  height: 170vh;
   margin: 0%;
   display: grid;
   grid-template-columns: repeat(16,1fr);
@@ -75,13 +75,6 @@ body {
   grid-row: 5;
 }
 
-#sidebardivider {
-  height: 2px;
-  background-color: var(--secondary-color);
-  grid-row: 4;
-  margin-top: 1px;
-}
-
 #actions-container {
   display: flex;
   justify-content: space-around;
@@ -103,9 +96,14 @@ body {
   height: 40px;
 }
 
-.iconsize:hover {
+.iconsize:hover, .contenticonsize:hover {
   cursor: pointer;
 }
+
+.contenticonsize {
+  height: 25px;
+}
+
 
 #follower-icons {
   display: flex;
@@ -140,11 +138,37 @@ body {
   margin-bottom: 24px;
   margin-right: 24px;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+#trending {
+  grid-column: 2/6;
+  font-size: 12px;
 }
 
 .project, #right-sidebar {
   background-color: rgb(255, 255, 255);
   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: repeat(10,10%);
+  grid-template-rows: repeat(10,10%);
+}
+
+.thumbnail {
+  grid-row: 2/8;
+  grid-column: 2/10;
+}
+
+.controls {
+  display: flex;
+  grid-row: 9;
+  grid-column: 3/9;
+  justify-content: space-between;
 }
 
 #sidebar {
@@ -203,4 +227,39 @@ body {
 
 #animation-icon {
   margin-bottom: 100px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  margin-bottom: 10px;
+}
+.hashtag {
+  color: #007bff; 
+}
+
+#thumbone {
+  background: linear-gradient(to bottom right, #ff9966, #ff5e62);
+}
+
+#thumbtwo {
+  background: linear-gradient(to bottom left, #66ffcc, #0099ff);
+}
+
+#thumbthree {
+  background: linear-gradient(to top right, #ffcc33, #ff6666);
+}
+
+#thumbfour {
+  background: linear-gradient(to top left, #66ccff, #ff99cc);
+}
+
+#thumbfive {
+  background: linear-gradient(to bottom right, #ffd700, #ff6347);
+}
+
+#thumbsix {
+  background: linear-gradient(to bottom left, #00ced1, #9932cc);
 }
