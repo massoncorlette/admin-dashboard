@@ -1,4 +1,4 @@
-* {border: 1px Solid red}
+* {border: 0px Solid red}
 
 :root {
   --primary-color: #d9e1eb;
@@ -150,6 +150,7 @@ h1 {
 }
 
 #trendingcontent {
+  margin-left: 10px;
   grid-row: span 9;
 }
 
